@@ -1,0 +1,9 @@
+[Unit]
+Description=powertop - a power consumption and power management diagnosis tool
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/powertop --auto-tune
+
+[Install]
+WantedBy=multi-user.target
